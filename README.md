@@ -9,7 +9,7 @@ Input:-
 Explanation of a conf file line.
 <view> ; <scale> ; <component name> ; ETL ; vdopia-etl= <count>
 Note:- vdopiasample stands for Auction & vdopiasample-bid is for Bid
-The script should change the values in the file according to the input provided. At a time only one line of the conf file should be altered.<br>
+The script should change the values in the file according to the input provided. At a time only one line of the conf file should be altered.<br><br>
 **Ans:-** <br>
  **Step 1:** Create a Shell Script.<br>
    +  Create a new file, **script.sh** in the Desktop , and add the following lines to it.<br>
@@ -59,6 +59,12 @@ sed -i "/^$view_string ; $scale ; $component ; ETL ; vdopia-etl=/ s/=[0-9]*$/=$c
 
 echo "sig.conf file has been updated successfully."
 ```
-**Step 2:** Create sig.conf File:<br>
-> nano
+**Step 2:** Create sig.conf File.<br>
+ >      nano sig.conf
+ + sig.conf file and Shell Script file should be in the same directory.<br> 
  **Step 3:** Make the Script Executable.<br>
+ >      chmod 755 script.sh
+**Step 4:** Run the Script.<br>
+>       ./modify_conf.sh
+**Step 5:**Verify the sig.conf File.<br>
++ After running the script, check the sig.conf file to confirm that the specified line has been updated with the new values according to the input.
