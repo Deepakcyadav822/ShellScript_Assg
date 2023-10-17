@@ -7,7 +7,7 @@ Input:-
 3) View [Auction/Bid]
 4) Count [single digit number]
 Explanation of a conf file line.
-<view> ; <scale> ; <component name> ; ETL ; vdopia-etl= <count>
+<view> ; <scale> ; <componentname> ; ETL ; vdopia-etl= <count>
 Note:- vdopiasample stands for Auction & vdopiasample-bid is for Bid
 The script should change the values in the file according to the input provided. At a time only one line of the conf file should be altered.<br><br>
 **Ans:-** <br>
