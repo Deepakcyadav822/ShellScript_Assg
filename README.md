@@ -55,7 +55,7 @@ else
 fi
 
 # Modify the sig.conf file
-sed -i "/^$view_string ; $scale ; $component ; ETL ; vdopia-etl=/ s/=[0-9]*$/=$count/" /home/sigmoid/Desktop/sig.conf
+echo  "/^$view_string ; $scale ; $component ; ETL ; vdopia-etl=$count/" > /home/sigmoid/sig.conf
 
 echo "sig.conf file has been updated successfully."
 ```
