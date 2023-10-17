@@ -12,7 +12,7 @@ Note:- vdopiasample stands for Auction & vdopiasample-bid is for Bid
 The script should change the values in the file according to the input provided. At a time only one line of the conf file should be altered.<br>
 **Ans:-** <br>
  **Step 1:** Create a Shell Script.<br>
-   +  Create a new file, **script.sh** in the directory , and add the following lines to it.<br>
+   +  Create a new file, **script.sh** in the Desktop , and add the following lines to it.<br>
 ``` ble.sh
 #!/bin/bash
 
@@ -55,7 +55,10 @@ else
 fi
 
 # Modify the sig.conf file
-sed -i "/^$view_string ; $scale ; $component ; ETL ; vdopia-etl=/ s/=[0-9]*$/=$count/" sig.conf
+sed -i "/^$view_string ; $scale ; $component ; ETL ; vdopia-etl=/ s/=[0-9]*$/=$count/" /home/sigmoid/Desktop/sig.conf
 
 echo "sig.conf file has been updated successfully."
 ```
+**Step 2:** Create sig.conf File:<br>
+> nano
+ **Step 3:** Make the Script Executable.<br>
