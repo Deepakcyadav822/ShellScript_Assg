@@ -65,6 +65,6 @@ echo "sig.conf file has been updated successfully."
  **Step 3:** Make the Script Executable.<br>
  >      chmod 755 script.sh
 **Step 4:** Run the Script.<br>
->       ./modify_conf.sh
+>       ./script.sh
 **Step 5:**Verify the sig.conf File.<br>
 + After running the script, check the sig.conf file to confirm that the specified line has been updated with the new values according to the input.
